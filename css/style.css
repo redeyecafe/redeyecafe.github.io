@@ -55,6 +55,10 @@ body a:hover {
 
 /* header */
 
+header {
+    background-color: #fff;
+}
+
 .navbar-light .navbar-brand {
     font-size: 1em;
     color: #000;
@@ -71,9 +75,9 @@ header h1 a span {
 .navbar-light .navbar-nav .nav-link {
     font-weight: 600;
     text-transform: capitalize;
-    color: #482d2e;
+    color: #7c0a02;
     letter-spacing: 1px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #7c0a02;
 }
 
 .navbar-light .navbar-nav .nav-link:hover,
@@ -82,10 +86,8 @@ header h1 a span {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #000000;
-    border-bottom: 1px solid #000;
-    background: #fff;
-    border-radius: 5px;
+    color: #CBBAA4;
+    border-bottom: 1px solid #CBBAA4;
 }
 
 .w3ls-btn {
@@ -450,10 +452,10 @@ p.sub-para {
 /* //banner */
 
 h4.agile-title {
-    color: #fff;
-    font-size: 3.5em;
-    text-shadow: 3px 1px 1px #000;
-    font-weight: 700;
+    color: #7c0a02;
+    font-size: 3.7em;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: 800;
 }
 
 /* banner text animation */
@@ -1067,12 +1069,14 @@ a.sb {
 
 .contact-left,
 .contact-right {
-    background: #eee;
+    background: #636364;
+    color: #fff;
 }
 
 .list-group-item,
 .bg-add {
-    background: #e8e8e8;
+    background: #CBBAA4;
+    
 }
 
 .contact-main h5 {
@@ -1080,10 +1084,11 @@ a.sb {
     font-style: italic;
     letter-spacing: 1px;
     font-weight: 600;
+    color: #fff;
 }
 
 .list-group-item {
-    background: #e0e0e0;
+    background: #CBBAA4;
 }
 
 .contact-main {
@@ -1098,7 +1103,7 @@ a.sb {
 
 .address p a,
 p.c-txt {
-    color: #777;
+    color: ;
     font-size: 1em;
 }
 
@@ -1126,13 +1131,18 @@ form.f-color .form-control {
 /* footer */
 
 footer {
-    background: #e8e8e8;
+    background: #636364;
 }
 
 /* footer grids */
 
 .cpy-right p a {
-    color: #333;
+    color: #7c0a02;
+    font-size: 1em;
+}
+
+.cpy-right p {
+    color: #fff;
     font-size: 1em;
 }
 
@@ -1172,12 +1182,9 @@ ul.social-iconsv2 li a i.fab {
     -ms-transition: all 0.5s ease-in-out;
 }
 
-ul.social-iconsv2 li:first-child a {
-    color: #3b5998;
-}
 
-ul.social-iconsv2 li:last-child {
-    color: #287bbc;
+a {
+    color: #7c0a02;
 }
 
 /* //footer */
@@ -1833,38 +1840,63 @@ h3.menu-section-title {
 }
 
 @media screen and (max-width: 940px) {
-    .wrapper-updated  {
+    .wrapper-updated {
         margin: 0px 20px 10px 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    .wrapper-updated  {
+    .wrapper-updated {
         margin: 0px;
     }
 }
 
 
 .accordion {
-    background-color: #eee;
-    color: #444;
+    background-color: #636364;
+    color: #fff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 1em;
     transition: 0.4s;
+    margin-top: 5px;
 }
 
-.active, .accordion:hover {
-    background-color: #ccc; 
+.active-faq,
+.accordion:hover {
+    background-color: #CBBAA4;
+}
+
+.accordion:after {
+    content: '\002B';
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active-faq:after {
+    content: "\2212";
 }
 
 .panel {
-    padding: 0 18px;
-    display: none;
+    padding: 0 20px;
     background-color: white;
+    max-height: 0;
     overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+h3.w3ls-title {
+    color: #7c0a02;
+}
+
+.faq-title {
+    margin-bottom: 20px;
+}
+.bg-list {
+    color: pink;
 }
