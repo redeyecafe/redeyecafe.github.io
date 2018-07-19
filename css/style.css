@@ -1836,18 +1836,18 @@ h3.menu-section-title {
 }
 
 .wrapper-updated {
-    margin: 10px 150px 50px 150px;
+    margin: 0px 150px 50px 150px;
 }
 
 @media screen and (max-width: 940px) {
     .wrapper-updated {
-        margin: 10px 20px 10px 20px;
+        margin: 0px 20px 10px 20px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .wrapper-updated {
-        margin: 50px 0px 40px 0px;
+        margin: 0px;
     }
 }
 
@@ -1899,4 +1899,8 @@ h3.w3ls-title {
 }
 .bg-list {
     color: pink;
+}
+
+#faq {
+    margin: 50px 0px 40px 0px;
 }
