@@ -86,8 +86,8 @@ header h1 a span {
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #CBBAA4;
-    border-bottom: 1px solid #CBBAA4;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 .w3ls-btn {
